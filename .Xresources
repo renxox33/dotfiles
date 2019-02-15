@@ -27,40 +27,39 @@ XTerm*selectToClipboard: true
 
 *.foreground:   #fbf7f0
 *.background:   #cc33ff
-*.cursorColor:  #f2e5cf
+*.cursorColor:  #9966ff
 
-! black
-*.color0:       #393a2f
-*.color8:       #393a2f
+! BLK
+URxvt.color0: #000000
+URxvt.color8: #000000
 
-! red
-*.color1:       #a5755a
-*.color9:       #c2896a
+! WHT
+URxvt.color7: #ffffff
+URxvt.color15: #ffffff
 
-! green
-*.color2:       #948f51
-*.color10:      #b8b265
+! RED
+URxvt.color1: #F46864
+URxvt.color9: #B42B33
 
-! yellow
-*.color3:       #cbbca6
-*.color11:      #e1d0b8
+! YEL
+URxvt.color3: #AC9510
+URxvt.color11: #726000
 
-! blue
-*.color4:       #6f7b75
-*.color12:      #a0b0a8
+! GRN
+URxvt.color2: #00ff99
+URxvt.color10: #00ff99
 
-! magenta
-*.color5:       #906638
-*.color13:      #b37f46
+! CYN
+URxvt.color6: #00B0CC
+URxvt.color14: #007793
 
-! cyan
-*.color6:       #686855
-*.color14:      #8d8d73
+! BLU
+URxvt.color4: #ff0066
+URxvt.color12: #ff0066
 
-! white
-*.color7:       #fbf2e9
-*.color15:      #fbf2e9
-
+! MAG
+URxvt.color5: #ff9933
+URxvt.color13: #ff9933
 
 
 URxvt.font:             xft:inconsolata:pixelsize=17:antialias=true:hinting=true
@@ -72,18 +71,18 @@ URxvt.font:             xft:inconsolata:pixelsize=17:antialias=true:hinting=true
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 #330025
+URxvt.background:                [75]#000000
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
 !!URxvt*background:                 #1f2e2e
-URxvt*foreground:                 grey
+URxvt*foreground:                 #ffbf00
 URxvt*saveLines:                  5000
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
 ! URxvt*inheritPixmap:            true
-URxvt*transparent:              true
-URxvt*shading:                  40
+!!URxvt*transparent:              true
+!!URxvt*shading:                  30
 
 ! Normal copy-paste keybindings without perls
 URxvt.iso14755:                   false
@@ -98,7 +97,9 @@ URxvt.keysym.Control-Up:          \033[1;5A
 URxvt.keysym.Shift-Control-Up:    \033[1;6A
 URxvt.keysym.Control-Down:        \033[1;5B
 URxvt.keysym.Shift-Control-Down:  \033[1;6B
-URxvt.perl-ext-common:             ...,clipboard, url-select,resize-font
+URxvt.perl-ext-common:             ...,clipboard, url-select,resize-font,fullscreen
+URxvt.keysym.F11: 		perl:fullscreen:switch
+
 !!URxvt.keysm.C-Down:		resize-font:smaller
 !!URxvt.keysm.C-Up:		resize-font:bigger
 ! URxvt.keysym.Shift-C-c:               perl:clipboard:copy
