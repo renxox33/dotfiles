@@ -62,8 +62,8 @@ URxvt.color5: #ff9933
 URxvt.color13: #ff9933
 
 
-URxvt.font:             xft:inconsolata:pixelsize=17:antialias=true:hinting=true
-
+URxvt.font:             xft:chilanka:size:12
+URxvt.letterSpacing:    -5
 
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
@@ -71,7 +71,7 @@ URxvt.font:             xft:inconsolata:pixelsize=17:antialias=true:hinting=true
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                [75]#000000
+URxvt.background:                [90]#000000
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
